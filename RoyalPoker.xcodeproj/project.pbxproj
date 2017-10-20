@@ -104,6 +104,7 @@
 		9B2B799C1F99676A00782BCE /* blur_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B2B79971F99676900782BCE /* blur_4.png */; };
 		9B2B799D1F99676A00782BCE /* blur_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B2B79981F99676900782BCE /* blur_2.png */; };
 		9B2B799E1F99676A00782BCE /* blur_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B2B79991F99676900782BCE /* blur_5.png */; };
+		9B2B79A01F998BE900782BCE /* PokerHands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2B799F1F998BE900782BCE /* PokerHands.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -206,6 +207,7 @@
 		9B2B79971F99676900782BCE /* blur_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blur_4.png; sourceTree = "<group>"; };
 		9B2B79981F99676900782BCE /* blur_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blur_2.png; sourceTree = "<group>"; };
 		9B2B79991F99676900782BCE /* blur_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blur_5.png; sourceTree = "<group>"; };
+		9B2B799F1F998BE900782BCE /* PokerHands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerHands.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +240,7 @@
 		9B2B78C61F995D9F00782BCE /* RoyalPoker */ = {
 			isa = PBXGroup;
 			children = (
+				9B2B799F1F998BE900782BCE /* PokerHands.swift */,
 				9B2B78DA1F99649800782BCE /* fonts */,
 				9B2B78D91F99642C00782BCE /* images */,
 				9B2B78C71F995D9F00782BCE /* AppDelegate.swift */,
@@ -553,6 +556,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B2B78CA1F995D9F00782BCE /* ViewController.swift in Sources */,
+				9B2B79A01F998BE900782BCE /* PokerHands.swift in Sources */,
 				9B2B78C81F995D9F00782BCE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
