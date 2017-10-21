@@ -3,49 +3,49 @@ import UIKit
 //----------------------//----------------------
 class ViewController: UIViewController {
     @IBOutlet weak var tempLabel: UILabel!
-    //---
+    //--Vues qui apparaissent-------------------
     @IBOutlet weak var slot_1: UIImageView!
     @IBOutlet weak var slot_2: UIImageView!
     @IBOutlet weak var slot_3: UIImageView!
     @IBOutlet weak var slot_4: UIImageView!
     @IBOutlet weak var slot_5: UIImageView!
-    //---
+    //--variable creation d'images flous-
     var card_blur_1: UIImage!
     var card_blur_2: UIImage!
     var card_blur_3: UIImage!
     var card_blur_4: UIImage!
     var card_blur_5: UIImage!
-    //---
+    //--connection des views qui contiennent backgrounds images_slot labelKeep- -
     @IBOutlet weak var bg_1: UIView!
     @IBOutlet weak var bg_2: UIView!
     @IBOutlet weak var bg_3: UIView!
     @IBOutlet weak var bg_4: UIView!
     @IBOutlet weak var bg_5: UIView!
-    //---
+    //--connection vers label GARDER-
     @IBOutlet weak var keep_1: UILabel!
     @IBOutlet weak var keep_2: UILabel!
     @IBOutlet weak var keep_3: UILabel!
     @IBOutlet weak var keep_4: UILabel!
     @IBOutlet weak var keep_5: UILabel!
-    //---
+    //--connection boutons MISER / le label pour afficher le CREDITS / DISTRIBUER--
     @IBOutlet weak var dealButton: UIButton!
     @IBOutlet weak var creditsLabel: UILabel!
     @IBOutlet weak var betLabel: UILabel!
-    //---
+    //--tableaux animations des images Flous-
     var arrOfCardImages: [UIImage]!
     //---
     var arrOfSlotImageViews: [UIImageView]!
     //---
     var deckOfCards = [(Int, String)]()
-    //---
+    //--tableaux des backgrounds-
     var arrOfBackgrounds: [UIView]!
     //---
     var arrOfKeepLabels: [UILabel]!
-    //---
+    //--variable qui fait la gestion d'autorisee de selectioner les cartes-
     var permissionToSelectCards = false
     var bet = 0
     var credits = 2000
-    //---
+    //--GERER LA SITUATIONATION DU JOUEUR DANS LA PARTIE-
     var chances = 2
     //--Methode verification types de jeu que j'ai dans la main paire flush...---------------------------
     let pokerHands = PokerHands()
@@ -59,23 +59,23 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         //---
         createCardObjectsFromImages()
-        //---
+        //--METTRE LES ELEMENTS DANS LE TABLEAUX--------------
         fillUpArrays()
-        //---
+        //--DUREE DE PREPARER MON ANIMATION ET REPETE LA 5 FOIS-
         prepareAnimations(duration: 0.5,
                           repeating: 5,
                           cards: arrOfCardImages)
-        //---
+        //--DONNER UN STYLE AU SLOTS IMAGEVIEWS NOS VUES------------
         stylizeSlotImageViews(radius: 10,
                               borderWidth: 0.5,
                               borderColor: UIColor.black.cgColor,
                               bgColor: UIColor.yellow.cgColor)
-        //---
+        //--DONNER STYLE AUX ARRIERES PLANS QUAND ON CLIQUE SUR UNE CARTES POUR LA CHOISIR-
         stylizeBackgroundViews(radius: 10,
                                borderWidth: nil,
                                borderColor: UIColor.black.cgColor,
                                bgColor: nil)
-        //---
+        //--METHODE QUI CREE LE JEU CARTE-
         createDeckOfCards()
         //---
     }
@@ -178,7 +178,7 @@ class ViewController: UIViewController {
                 slotAnimation.startAnimating()
             }
         }
-        //---
+        //--DELAI TEMPS 2.55s AVANT DE ME MONTRER LES CARTES-
         Timer.scheduledTimer(timeInterval: 2.55,
                              target: self,
                              selector: #selector(displayRandomCards),
@@ -199,7 +199,7 @@ class ViewController: UIViewController {
         prepareForNextHand()
         //---
     }
-    //----------------------//----------------------
+    //-----fonction prepare la prochaine main-----------------//----------------------
     func prepareForNextHand() {
         //---
         if chances == 0 {
