@@ -47,11 +47,11 @@ class ViewController: UIViewController {
     var credits = 2000
     //---
     var chances = 2
-    //---
+    //--Methode verification types de jeu que j'ai dans la main paire flush...---------------------------
     let pokerHands = PokerHands()
-    //---
+    //--tableau de Tuple pour placement des cartes GARDER par rapport au placement index-
     var handToAnalyse = [(0, ""), (0, ""), (0, ""), (0, ""), (0, "")]
-    //---
+    //--declaration de la main que j'ai au hazard-
     var theHand = [(Int, String)]()
     //----------------------//----------------------
     override func viewDidLoad() {
