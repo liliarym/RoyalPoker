@@ -79,7 +79,7 @@ class ViewController: UIViewController {
         createDeckOfCards()
         //---
     }
-    //----------------------//----------------------
+    //----------------------/CREE JEU CARTE QUI REPRESENTE 52 CARTES/----------------------
     func createDeckOfCards() {
         deckOfCards = [(Int, String)]()
         for a in 0...3 {
@@ -89,7 +89,7 @@ class ViewController: UIViewController {
             }
         }
     }
-    //----------------------//----------------------
+    //----------------------/METHODE QUI APPEL LES IMAGEVIEWS/----------------------
     func stylizeSlotImageViews(radius r: CGFloat,
                                borderWidth w: CGFloat,
                                borderColor c: CGColor,
@@ -102,7 +102,7 @@ class ViewController: UIViewController {
             slotImageView.layer.backgroundColor = g
         }
     }
-    //----------------------//----------------------
+    //----------------------/METHODE POUR LES BACKGROUNDS/----------------------
     func stylizeBackgroundViews(radius r: CGFloat,
                                 borderWidth w: CGFloat?,
                                 borderColor c: CGColor,
@@ -129,9 +129,9 @@ class ViewController: UIViewController {
         card_blur_2 = UIImage(named: "blur_2.png")
         card_blur_3 = UIImage(named: "blur_3.png")
         card_blur_4 = UIImage(named: "blur_4.png")
-        card_blur_5 = UIImage(named: "blur_4.png")
+        card_blur_5 = UIImage(named: "blur_5.png")
     }
-    //----------------------//----------------------
+    //----------------------/FONCTION QUI PREPARE LES ANIMATIONS/----------------------
     func prepareAnimations(duration d: Double,
                            repeating r: Int,
                            cards c: [UIImage]) {
@@ -141,7 +141,7 @@ class ViewController: UIViewController {
             slotAnimation.animationImages = returnRandomBlurCards(arrBlurCards: c)
         }
     }
-    //----------------------//----------------------
+    //----------------------/METHODE QUI RENVOI 5 TABLEAUX DE CARTES FLOUS MELANGES/----------------------
     func returnRandomBlurCards(arrBlurCards: [UIImage]) -> [UIImage] {
         var arrToReturn = [UIImage]()
         var arrOriginal = arrBlurCards
@@ -152,7 +152,7 @@ class ViewController: UIViewController {
         }
         return arrToReturn
     }
-    //----------------------//----------------------
+    //----------------------/METHODE POUR LE BOUTON DISTIBUER/----------------------
     @IBAction func play(_ sender: UIButton) {
         //---
         if chances == 0 || dealButton.alpha == 0.5 {
@@ -185,7 +185,7 @@ class ViewController: UIViewController {
                              userInfo: nil,
                              repeats: false)
     }
-    //----------------------//----------------------
+    //----------------------/METHODE  FAIRE AFFICHER LES CARTES AU HAZARD/----------------------
     @objc func displayRandomCards() {
         //---
         theHand = returnRandomHand()
@@ -300,19 +300,19 @@ class ViewController: UIViewController {
         tempLabel.text = handToDisplay
         creditsLabel.text = "CRÉDITS: \(credits)"
     }
-    //----------------------//----------------------
+    //----------------------/BOUTONS QUE JE PEUX CLIQUER POUR SELECTIONNER DES CARTES/----------------------
     @IBAction func cardsToHold(_ sender: UIButton) {
         //---
         if !permissionToSelectCards {
             return
         }
-        //---
+        //--CONDITION POUR DESELECTIONNER LES CARTES ETAT OFF-
         if arrOfBackgrounds[sender.tag].layer.borderWidth == 0.5 {
             arrOfSlotImageViews[sender.tag].layer.borderWidth = 0.5
             arrOfBackgrounds[sender.tag].layer.borderWidth = 0.0
             arrOfBackgrounds[sender.tag].layer.backgroundColor = nil
             arrOfKeepLabels[sender.tag].isHidden = true
-            //---
+            //-- ETAT ON DE LA CARTE-
             manageSelectedCards(theTag: sender.tag, shouldAdd: false)
         } else {
             arrOfSlotImageViews[sender.tag].layer.borderWidth = 1.0
@@ -333,7 +333,7 @@ class ViewController: UIViewController {
             handToAnalyse[theTag] = (0, "")
         }
     }
-    //----------------------//----------------------
+    //----------------------/METHODE POUR LES BOUTONS MISER 25 / 100 / tout/----------------------
     @IBAction func betButtons(_ sender: UIButton) {
         //---
         if chances <= 1 {
@@ -361,11 +361,11 @@ class ViewController: UIViewController {
             creditsLabel.text = "CRÉDITS : \(credits)"
             dealButton.alpha = 1.0
         }
-        //---
+        //-- APPEL A LA FONCTION remettre les dos de cartes POUR JOUER LA PROCHAINE MAIN-
         resetBackOfCards()
         //---
     }
-    //----------------------//----------------------
+    //----------------------/METHODE POUR REMETTRE LES DOS DE CARTES POUR LA PROCHAINE MAIN /----------------------
     func resetBackOfCards() {
         for back in arrOfSlotImageViews {
             back.image = UIImage(named: "back.png")
