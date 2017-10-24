@@ -28,19 +28,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v6W-97-4e7" userLabel="slot_1">
-                                <rect key="frame" x="14" y="106" width="121.5" height="195"/>
+                                <rect key="frame" x="14" y="106" width="121.5" height="195.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpoker.png" translatesAutoresizingMaskIntoConstraints="NO" id="TE7-v9-9Xk">
-                                        <rect key="frame" x="3" y="3" width="110.5" height="161"/>
+                                        <rect key="frame" x="3" y="3" width="110.5" height="161.5"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4v-7Y-JTV">
-                                        <rect key="frame" x="3" y="3" width="110.5" height="161"/>
+                                        <rect key="frame" x="3" y="3" width="110.5" height="161.5"/>
                                         <connections>
                                             <action selector="cardsToHold:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bdX-9d-dpe"/>
                                         </connections>
                                     </button>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GARDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMJ-OV-uHH">
-                                        <rect key="frame" x="3" y="169" width="110.5" height="21"/>
+                                        <rect key="frame" x="3" y="169.5" width="110.5" height="21"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -62,19 +62,19 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b0o-kV-bPI" userLabel="slot_2">
-                                <rect key="frame" x="143.5" y="106" width="121.5" height="195"/>
+                                <rect key="frame" x="143.5" y="106" width="121.5" height="195.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpoker.png" translatesAutoresizingMaskIntoConstraints="NO" id="DiM-Lp-wzh">
-                                        <rect key="frame" x="3" y="3" width="110.5" height="161"/>
+                                        <rect key="frame" x="3" y="3" width="110.5" height="161.5"/>
                                     </imageView>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiS-9b-5fJ">
-                                        <rect key="frame" x="3" y="3" width="110.5" height="161"/>
+                                        <rect key="frame" x="3" y="3" width="110.5" height="161.5"/>
                                         <connections>
                                             <action selector="cardsToHold:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rf0-WL-Cyy"/>
                                         </connections>
                                     </button>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GARDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndy-Bv-hzu">
-                                        <rect key="frame" x="3" y="169" width="110.5" height="21"/>
+                                        <rect key="frame" x="3" y="169.5" width="110.5" height="21"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -96,19 +96,19 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XvM-rc-8g9" userLabel="slot_3">
-                                <rect key="frame" x="273" y="106" width="121" height="195"/>
+                                <rect key="frame" x="273" y="106" width="121" height="195.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpoker.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xvu-tC-9bZ">
-                                        <rect key="frame" x="3" y="3" width="115" height="161"/>
+                                        <rect key="frame" x="3" y="3" width="115" height="161.5"/>
                                     </imageView>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKt-YS-XFZ">
-                                        <rect key="frame" x="3" y="3" width="115" height="161"/>
+                                        <rect key="frame" x="3" y="3" width="115" height="161.5"/>
                                         <connections>
                                             <action selector="cardsToHold:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UPg-fF-bcZ"/>
                                         </connections>
                                     </button>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GARDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2i-Ot-gxS">
-                                        <rect key="frame" x="3" y="169" width="115" height="21"/>
+                                        <rect key="frame" x="3" y="169.5" width="115" height="21"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -132,19 +132,19 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PCY-c0-T0l" userLabel="slot_4">
-                                <rect key="frame" x="402" y="106" width="121.5" height="195"/>
+                                <rect key="frame" x="402" y="106" width="121.5" height="195.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpoker.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Yb-Zq-kqc">
-                                        <rect key="frame" x="3" y="3" width="110.5" height="161"/>
+                                        <rect key="frame" x="3" y="3" width="110.5" height="161.5"/>
                                     </imageView>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jtu-Tv-2Qv">
-                                        <rect key="frame" x="3" y="3" width="110.5" height="161"/>
+                                        <rect key="frame" x="3" y="3" width="110.5" height="161.5"/>
                                         <connections>
                                             <action selector="cardsToHold:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a10-AS-Tlh"/>
                                         </connections>
                                     </button>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GARDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2o-0o-fku">
-                                        <rect key="frame" x="3" y="169" width="110.5" height="21"/>
+                                        <rect key="frame" x="3" y="169.5" width="110.5" height="21"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -166,19 +166,19 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sYK-kh-WZw" userLabel="slot_5">
-                                <rect key="frame" x="531.5" y="106" width="121.5" height="195"/>
+                                <rect key="frame" x="531.5" y="106" width="121.5" height="195.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpoker.png" translatesAutoresizingMaskIntoConstraints="NO" id="K7T-4f-Ob9">
-                                        <rect key="frame" x="3" y="3" width="110.5" height="161"/>
+                                        <rect key="frame" x="3" y="3" width="110.5" height="161.5"/>
                                     </imageView>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxN-fY-Lyw">
-                                        <rect key="frame" x="3" y="3" width="110.5" height="161"/>
+                                        <rect key="frame" x="3" y="3" width="110.5" height="161.5"/>
                                         <connections>
                                             <action selector="cardsToHold:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aif-2q-E4l"/>
                                         </connections>
                                     </button>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GARDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9s8-Bm-vah">
-                                        <rect key="frame" x="3" y="169" width="110.5" height="21"/>
+                                        <rect key="frame" x="3" y="169.5" width="110.5" height="21"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -286,6 +286,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="uSA-6M-qIe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="01Y-E8-7RV"/>
                             <constraint firstItem="doP-Gs-2za" firstAttribute="top" secondItem="uSA-6M-qIe" secondAttribute="bottom" constant="2" id="0x8-oQ-Fxa"/>
                             <constraint firstItem="doP-Gs-2za" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="0z4-wl-53O"/>
                             <constraint firstItem="F0D-Fi-Ryg" firstAttribute="trailing" secondItem="XvM-rc-8g9" secondAttribute="trailing" id="1yM-bt-KSu"/>
@@ -321,6 +322,7 @@
                             <constraint firstItem="doP-Gs-2za" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.3043" id="OLD-qN-3tl"/>
                             <constraint firstItem="6NY-Mh-l1v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OrM-HG-Oc2"/>
                             <constraint firstItem="6NY-Mh-l1v" firstAttribute="centerX" secondItem="XvM-rc-8g9" secondAttribute="centerX" id="PBS-FP-Wlp"/>
+                            <constraint firstItem="doP-Gs-2za" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="POB-Iz-KJg"/>
                             <constraint firstItem="M7y-0s-iF4" firstAttribute="leading" secondItem="PCY-c0-T0l" secondAttribute="leading" id="R0i-ww-mu6"/>
                             <constraint firstItem="vH3-wr-UcV" firstAttribute="top" secondItem="F0D-Fi-Ryg" secondAttribute="top" id="RC3-8I-EIu"/>
                             <constraint firstItem="6NY-Mh-l1v" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RLt-DM-BzD"/>
@@ -328,6 +330,7 @@
                             <constraint firstItem="v6W-97-4e7" firstAttribute="top" secondItem="XvM-rc-8g9" secondAttribute="top" id="T5T-Lu-lT1"/>
                             <constraint firstItem="uSA-6M-qIe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="15" id="TTu-Or-HNz"/>
                             <constraint firstItem="vH3-wr-UcV" firstAttribute="height" secondItem="F0D-Fi-Ryg" secondAttribute="height" id="Vw0-WF-iRH"/>
+                            <constraint firstItem="xiF-5o-cDi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="WCe-Da-tQX"/>
                             <constraint firstItem="PCY-c0-T0l" firstAttribute="top" secondItem="XvM-rc-8g9" secondAttribute="top" id="Wqo-Bk-xUv"/>
                             <constraint firstItem="M7y-0s-iF4" firstAttribute="width" secondItem="F0D-Fi-Ryg" secondAttribute="width" id="WuL-Uj-UYz"/>
                             <constraint firstItem="XvM-rc-8g9" firstAttribute="leading" secondItem="b0o-kV-bPI" secondAttribute="trailing" constant="8" id="XA8-K4-Hot"/>
