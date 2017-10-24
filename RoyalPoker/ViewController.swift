@@ -179,7 +179,7 @@ class ViewController: UIViewController {
             }
         }
         //--DELAI TEMPS 2.55s AVANT DE ME MONTRER LES CARTES-
-        Timer.scheduledTimer(timeInterval: 2.55,
+        Timer.scheduledTimer(timeInterval: 2.75,
                              target: self,
                              selector: #selector(displayRandomCards),
                              userInfo: nil,
@@ -319,7 +319,7 @@ class ViewController: UIViewController {
             arrOfBackgrounds[sender.tag].layer.borderWidth = 0.5
             arrOfBackgrounds[sender.tag].layer.borderColor = UIColor.blue.cgColor
             arrOfBackgrounds[sender.tag].layer.backgroundColor = UIColor(red: 0.0,
-                                                                         green: 0.0, blue: 1.0, alpha: 0.5).cgColor
+                                                                         green: 1.0, blue: 0.0, alpha: 0.5).cgColor
             arrOfKeepLabels[sender.tag].isHidden = false
             //---
             manageSelectedCards(theTag: sender.tag, shouldAdd: true)
@@ -368,7 +368,7 @@ class ViewController: UIViewController {
     //----------------------/METHODE POUR REMETTRE LES DOS DE CARTES POUR LA PROCHAINE MAIN /----------------------
     func resetBackOfCards() {
         for back in arrOfSlotImageViews {
-            back.image = UIImage(named: "back.png")
+            back.image = UIImage(named: "backpoker.png")
         }
     }
     //----------------------//----------------------
